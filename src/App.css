@@ -1,0 +1,14 @@
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(34, 34, 34);
+    height: 100vh;
+    padding: 35px;
+}
+
+
+
+
