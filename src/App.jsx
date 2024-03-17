@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App w-[100vw] overflow-x-hidden ">
       <Nav />
-      <div className="mx-auto  mt-48 md:mt-64">
+      <div className="mx-auto mt-48 md:mt-64">
         <Hero />
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { aboutMeText } from "../../Data/data";
-import { motion } from "framer-motion";
 import StillText from "./StillText";
+import ScrollBottomToTop from "../animation/ScrollBottomToTop";
 
 const AboutMeArea = () => {
   const [selectedWord, setSelectedWord] = useState({
@@ -41,26 +41,22 @@ const AboutMeArea = () => {
           return;
         }
       }
-    }, 70);
+    }, 50);
 
     return () => clearInterval(interval);
   }, [selectedWord]);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: "-20%" }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      exit={{ opacity: 0, y: "-20%" }}
-      className="h-[400px] md:h-auto text-center md:text-left ml-14">
+    <div className="h-[400px] md:h-auto text-center md:text-left ml-2 md:ml-14">
       {/* first text */}
-      <p className="text-2xl sm:text-4xl font-serif font-bold">
+
+      <p className="text-2xl sm:text-5xl font-serif font-bold">
         {displayText1}{" "}
         <span>{displayText1.length < aboutMeText[0].length && "|"}</span>
       </p>
 
       {/* second text */}
-      <p className="text-2xl sm:text-3xl font-serif font-bold mt-10">
+      <p className="text-2xl sm:text-3xl font-serif font-bold mt-16">
         {displayText2}
         <span>
           {displayText2.length < aboutMeText[1].length &&
@@ -70,19 +66,20 @@ const AboutMeArea = () => {
       </p>
 
       {/* stll text -1 */}
+
       {displayText2.length === aboutMeText[1].length && (
         <StillText timeDelay={0.6}>{aboutMeText[2]}</StillText>
       )}
 
       {/* stll text -2 */}
       {displayText2.length === aboutMeText[1].length && (
-        <StillText timeDelay={1.5}>
-          <button className=" px-5 py-3 text-xl bg-white text-yellow-600 rounded-xl hover:bg-yellow-300 hover:text-slate-700 font-medium">
+        <StillText timeDelay={1.2}>
+          <button className="mt-14 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
             GET IN TOUCH
           </button>
         </StillText>
       )}
-    </motion.div>
+    </div>
   );
 };
 

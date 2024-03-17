@@ -3,12 +3,6 @@
     grid-template-columns: 2fr 1.5fr;
 
  }
- @media screen and (max-width: 768px) {
-     .hero {
-         grid-template-columns: 1fr;
-         
-     }
-}
 
 .image-container {
     display: flex;
@@ -26,8 +20,8 @@
     height: 450px;
     object-fit: cover;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    box-shadow: 0px 0px 10px rgba(255, 255, 255);
-    animation: morphing 10s infinite ease;
+    box-shadow: 0px 0px 50px rgb(255, 243, 7);
+    animation: morphing 14s infinite ease;
 }
 
 .image-container:hover img {
@@ -37,38 +31,55 @@
 @keyframes morphing {
     0% {
         border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 0px 50px rgba(231, 255, 12, 0.964);
     }
+    15% {
+        border-radius: 68% 50% 70% 35% / 46% 32% 24% 44%;
+        box-shadow: 0px 0px 45px rgb(251, 240, 165);
+    }  
 
-    25% {
+    30% {
         border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%;
-        box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.7);
+        box-shadow: 0px 0px 45px rgb(255, 226, 38);
     }
 
-    50% {
+    45% {
         border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%;
-        box-shadow: 0px 0px 8px rgba(249, 239, 133, 0.5);
+        box-shadow: 0px 0px 55px rgba(206, 241, 110, 0.99);
     }
 
-    75% {
-        border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
-        box-shadow: 0px 2px 9px rgba(255, 255, 255,0.7);
+    60% {
+        border-radius: 43% 77% 48% 32% / 53% 38% 46% 33%;
+        box-shadow: 0px 2px 45px rgb(255, 209, 58);
     }
+   75% {
+       border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%;
+       box-shadow: 0px 2px 45px rgb(255, 209, 58);
+   }
+  90% {
+      border-radius: 43% 27% 18% 34% / 33% 68% 42% 72%;
+      box-shadow: 0px 2px 45px rgb(255, 209, 58);
+  }
 }
 
 
 @media only screen and (max-width:500px){
 .image-container {
-       
         width: 320px;
         height: 320px;
     
     }
-
-    .image-container img {
+ .image-container img {
         width: 300px;
         height: 300px;
         object-fit: cover;
     }
 
 }
+
+ @media screen and (max-width: 768px) {
+     .hero {
+         grid-template-columns: 1fr;
+
+     }
+ }
