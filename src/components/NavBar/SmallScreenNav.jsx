@@ -12,7 +12,7 @@ const SmallScreenNav = ({ isHidden, handleBurger }) => {
           animate={{ opacity: 1, x: "0%" }}
           exit={{ opacity: 0, x: "-100%" }}
           transition={{ duration: 0.5 }}
-          className={`flex flex-col md:hidden ${slideClass} slide gap-2 text-center`}>
+          className={`flex flex-col md:hidden ${slideClass} slide gap-2 text-center z-50`}>
           <motion.p className="text-xl font-semibold ">
             <button onClick={handleBurger}>X</button>
           </motion.p>

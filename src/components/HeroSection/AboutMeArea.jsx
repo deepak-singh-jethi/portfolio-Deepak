@@ -41,7 +41,7 @@ const AboutMeArea = () => {
           return;
         }
       }
-    }, 50);
+    }, 70);
 
     return () => clearInterval(interval);
   }, [selectedWord]);

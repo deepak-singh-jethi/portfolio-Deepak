@@ -1,0 +1,92 @@
+import React from "react";
+import ScrollBottomToTop from "../animation/ScrollBottomToTop";
+
+const Projects = () => {
+  return (
+    <ScrollBottomToTop>
+      <div className="text-white">
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+        <h1>Projects</h1>
+      </div>
+    </ScrollBottomToTop>
+  );
+};
+
+export default Projects;

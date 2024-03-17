@@ -1,23 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import AboutMeArea from "./AboutMeArea";
 import "./hero.css";
+import { motion } from "framer-motion";
 import ScrollBottomToTop from "../animation/ScrollBottomToTop";
 const Hero = () => {
   return (
     <ScrollBottomToTop>
       <div className="text-white hero w-[100vw] justify-between h-fit items-center">
         <AboutMeArea />
-        <ScrollBottomToTop duration={2}>
-          <div className="image-container mt-10 md:mt-0">
-            <div className="liquid-border">
-              <img
-                src="https://wallpapercave.com/wp/wp7204354.jpg"
-                alt="Your Image"
-                className="image"
-              />
-            </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 1.4, x: "-100px" }}
+          animate={{ opacity: 1, scale: 1, x: "0%" }}
+          transition={{ duration: 1 }}
+          className="image-container mt-10 md:mt-0">
+          <div className="liquid-border">
+            <img
+              src="https://wallpapercave.com/wp/wp7204354.jpg"
+              alt="Your Image"
+              className="image"
+            />
           </div>
-        </ScrollBottomToTop>
+        </motion.div>
       </div>
     </ScrollBottomToTop>
   );
