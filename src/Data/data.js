@@ -1,9 +1,12 @@
+import Quiz from "../resource/Quiz.png";
+import Store from "../resource/Store.png";
+import Blog from "../resource/Bloggers.png";
+
 export const navLinks = [
   { title: "About Me", href: "/" },
-  { title: "Projects", href: "/projects" },
-  { title: "Skills", href: "/blog" },
-  { title: "Resume", href: "/resume" },
-  { title: "Contact", href: "/contact" },
+  { title: "Skills", href: "#skill" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact", href: "#hireMe" },
 ];
 
 export const aboutMeText = [
@@ -69,5 +72,32 @@ export const skills = [
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/ui-ux-design-1594521-1348622.png?f=webp&w=512",
     image:
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/ui-ux-design-1594521-1348622.png?f=webp&w=512",
+  },
+];
+
+export const projects = [
+  {
+    name: "Dee Store",
+    description:
+      "An e-commerce website built with React, Redux, React Router, and Tailwind CSS.",
+    techStack: ["React", "Redux", "React Router", "Tailwind CSS"],
+    githubLink: "https://github.com/deepak-singh-jethi/Dee-store",
+    imageUrl: Store,
+  },
+
+  {
+    name: "Bloggers App",
+    description:
+      "A blogging application created using React, Redux, React Router, and Tailwind CSS.",
+    techStack: ["React", "Redux", "React Router", "Tailwind CSS"],
+    githubLink: "https://github.com/deepak-singh-jethi/bloggers-app",
+    imageUrl: Blog,
+  },
+  {
+    name: "Quiz Application",
+    description: "A quiz application built using React.",
+    techStack: ["React"],
+    githubLink: "https://github.com/deepak-singh-jethi/d_quiz_application",
+    imageUrl: Quiz,
   },
 ];

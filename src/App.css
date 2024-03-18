@@ -5,6 +5,13 @@
     scroll-behavior: smooth;
     scrollbar-color: yellow;
 }
+html {
+    scroll-snap-type: y mandatory;
+}
+
+section {
+    scroll-snap-align: start;
+}
 .slide {
     position: absolute;
     top: 0;

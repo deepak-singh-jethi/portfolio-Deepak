@@ -24,7 +24,7 @@ const SmallScreenNav = ({ isHidden, handleBurger }) => {
               initial={{ opacity: 0, x: "-100%" }}
               animate={{ opacity: 1, x: "0%" }}
               exit={{ opacity: 0, x: "-100%" }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.05 }}
               style={{ marginBottom: "10px" }}
               className="text-xl font-semibold pt-6">
               <a href={href}>{title}</a>

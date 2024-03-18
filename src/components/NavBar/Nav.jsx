@@ -13,7 +13,8 @@ const Nav = () => {
     <div className="w-full flex justify-between md:px-14 px-4 py-6 fixed top-0 text-slate-100 bg-black z-[100] ">
       <div>
         <p className="text-3xl md:text-3xl font-bold  text-center text-yellow-400">
-          {"< Deepak />"}
+          {"< "}
+          <span className="text-white">Deepak</span> {" />"}
         </p>
       </div>
       <div className="lg:hidden block">

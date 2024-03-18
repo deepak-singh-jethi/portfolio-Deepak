@@ -56,7 +56,7 @@ const AboutMeArea = () => {
       </p>
 
       {/* second text */}
-      <p className="text-2xl sm:text-3xl font-serif font-bold mt-16">
+      <p className="text-2xl sm:text-3xl font-serif font-bold mt-8 md:mt-16">
         {displayText2}
         <span>
           {displayText2.length < aboutMeText[1].length &&
@@ -74,7 +74,7 @@ const AboutMeArea = () => {
       {/* stll text -2 */}
       {displayText2.length === aboutMeText[1].length && (
         <StillText timeDelay={1.2}>
-          <button className="mt-14 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
+          <button className="md:mt-14 mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
             GET IN TOUCH
           </button>
         </StillText>

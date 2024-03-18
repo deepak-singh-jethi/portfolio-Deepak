@@ -13,7 +13,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 1.4, x: "-100px" }}
           animate={{ opacity: 1, scale: 1, x: "0%" }}
           transition={{ duration: 1 }}
-          className="image-container mt-10 md:mt-0">
+          className="image-container mt-15 md:mt-0">
           <div className="liquid-border">
             <img
               src="https://wallpapercave.com/wp/wp7204354.jpg"
