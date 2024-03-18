@@ -6,7 +6,7 @@ import SkillContent from "./SkillContent";
 const Skills = () => {
   return (
     <ScrollBottomToTop duration={1.4}>
-      <div className="text-white mt-28 md:mt-40">
+      <div className="text-white mt-28 md:my-48">
         <h1 className="md:text-5xl text-4xl font-bold text-yellow-400 text-center font-mono">
           My Skills
         </h1>

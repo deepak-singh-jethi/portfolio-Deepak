@@ -79,7 +79,7 @@ export const projects = [
   {
     name: "Dee Store",
     description:
-      "An e-commerce website built with React, Redux, React Router, and Tailwind CSS.",
+      "Dee Store: A React-based e-commerce platform, utilizing Redux, Router, and Tailwind CSS, offering seamless online shopping. Browse diverse products, manage your cart, and experience secure checkout for a convenient shopping journey.",
     techStack: ["React", "Redux", "React Router", "Tailwind CSS"],
     githubLink: "https://github.com/deepak-singh-jethi/Dee-store",
     imageUrl: Store,
@@ -88,14 +88,15 @@ export const projects = [
   {
     name: "Bloggers App",
     description:
-      "A blogging application created using React, Redux, React Router, and Tailwind CSS.",
+      "Bloggers App: A comprehensive React application with Redux, Router, and Tailwind CSS, empowering bloggers to effortlessly create, manage, and share their content, fostering meaningful connections within the blogging community.",
     techStack: ["React", "Redux", "React Router", "Tailwind CSS"],
     githubLink: "https://github.com/deepak-singh-jethi/bloggers-app",
     imageUrl: Blog,
   },
   {
     name: "Quiz Application",
-    description: "A quiz application built using React.",
+    description:
+      "Quiz Application: A React-powered quiz platform, offering diverse subject coverage and an engaging learning environment. Test your knowledge, track your progress, and enhance your understanding with this interactive educational tool.",
     techStack: ["React"],
     githubLink: "https://github.com/deepak-singh-jethi/d_quiz_application",
     imageUrl: Quiz,
