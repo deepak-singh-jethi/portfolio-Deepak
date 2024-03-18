@@ -23,7 +23,7 @@ const Projects = () => {
           {projects.map((project, index) =>
             selectedProject === project.name ? (
               <motion.div
-                key={index * 2}
+                key={index}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -47,10 +47,10 @@ const Projects = () => {
               </motion.div>
             ) : (
               <motion.div
-                key={project.name}
-                initial={{ opacity: 0, y: 10 }}
+                key={index}
+                initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.6, delay: 0.2 * index }}
                 className="relative bg-slate-600 rounded-lg shadow-lg h-[200px] md:h-[250px] mt-10 md:mt-20 overflow-hidden border-2"
                 onMouseEnter={() => handleHoverIn(project.name)}
                 onMouseLeave={handleHoverOut}>
