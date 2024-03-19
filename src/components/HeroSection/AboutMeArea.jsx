@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { aboutMeText } from "../../Data/data";
 import StillText from "./StillText";
 import { motion } from "framer-motion";
+import Social from "../Social/Social";
 
 const AboutMeArea = () => {
   const [selectedWord, setSelectedWord] = useState({
@@ -72,29 +73,32 @@ const AboutMeArea = () => {
       )}
 
       {displayText2.length === aboutMeText[1].length && (
-        <div className="flex gap-5 md:flex-row flex-col md:justify-start items-center py-14">
-          <motion.button
-            initial={{ scale: 0.4, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
-            <a href="#hireMe">GET IN TOUCH</a>
-          </motion.button>
-          <motion.button
-            initial={{ scale: 0.4, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{
-              duration: 0.5,
-              delay: 0.4,
-            }}
-            viewport={{ once: true }}
-            className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
-            <a href="https://deepakresume1797.tiiny.site/" target="blank">
-              Get Resume
-            </a>
-          </motion.button>
-        </div>
+        <>
+          <div className="flex gap-5 md:flex-row flex-col md:justify-start items-center pt-14 pb-6">
+            <motion.button
+              initial={{ scale: 0.4, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
+              <a href="#hireMe">GET IN TOUCH</a>
+            </motion.button>
+            <motion.button
+              initial={{ scale: 0.4, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{
+                duration: 0.5,
+                delay: 0.4,
+              }}
+              viewport={{ once: true }}
+              className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
+              <a href="https://deepakresume1797.tiiny.site/" target="blank">
+                Get Resume
+              </a>
+            </motion.button>
+          </div>
+          <Social />
+        </>
       )}
     </div>
   );
