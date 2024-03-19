@@ -16,9 +16,13 @@ const Projects = () => {
   return (
     <ScrollBottomToTop duration={2}>
       <div className="container mx-auto px-4 py-12 md:py-24 mt-20">
-        <h1 className="text-3xl md:text-5xl font-bold text-yellow-400 text-center mb-4 font-mono">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="text-3xl md:text-5xl font-bold text-yellow-400 text-center mb-4 font-mono">
           My Projects
-        </h1>
+        </motion.h1>
         <div className="grid gap-4 md:gap-14 grid-cols-1 md:grid-cols-2 justify-center items-center w-full">
           {projects.map((project, index) =>
             selectedProject === project.name ? (
@@ -59,8 +63,8 @@ const Projects = () => {
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.3, stiffness: 30 }}
                   exit={{ opacity: 0, y: 50 }}
-                  className="absolute inset-0 flex justify-center items-center text-yellow-400">
-                  <h2 className="text-2xl md:text-6xl font-bold text-center">
+                  className="absolute inset-0 flex justify-center items-center text-white">
+                  <h2 className="text-2xl md:text-4xl font-bold text-center">
                     {project.name}
                   </h2>
                 </motion.div>

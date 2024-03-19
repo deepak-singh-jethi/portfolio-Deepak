@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { aboutMeText } from "../../Data/data";
 import StillText from "./StillText";
-import ScrollBottomToTop from "../animation/ScrollBottomToTop";
+import { motion } from "framer-motion";
 
 const AboutMeArea = () => {
   const [selectedWord, setSelectedWord] = useState({
@@ -47,7 +47,7 @@ const AboutMeArea = () => {
   }, [selectedWord]);
 
   return (
-    <div className="h-[400px] md:h-auto text-center md:text-left ml-2 md:ml-14">
+    <div className="h-[500px] md:h-auto text-center md:text-left ml-2 md:ml-14">
       {/* first text */}
 
       <p className="text-2xl sm:text-5xl font-serif font-bold">
@@ -68,16 +68,33 @@ const AboutMeArea = () => {
       {/* stll text -1 */}
 
       {displayText2.length === aboutMeText[1].length && (
-        <StillText timeDelay={0.6}>{aboutMeText[2]}</StillText>
+        <StillText timeDelay={0.9}>{aboutMeText[2]}</StillText>
       )}
 
-      {/* stll text -2 */}
       {displayText2.length === aboutMeText[1].length && (
-        <StillText timeDelay={1.2}>
-          <button className="md:mt-14 mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
-            GET IN TOUCH
-          </button>
-        </StillText>
+        <div className="flex gap-5 md:flex-row flex-col md:justify-start items-center py-14">
+          <motion.button
+            initial={{ scale: 0.4, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
+            <a href="#hireMe">GET IN TOUCH</a>
+          </motion.button>
+          <motion.button
+            initial={{ scale: 0.4, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: 0.4,
+            }}
+            viewport={{ once: true }}
+            className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
+            <a href="https://deepakresume1797.tiiny.site/" target="blank">
+              Get Resume
+            </a>
+          </motion.button>
+        </div>
       )}
     </div>
   );

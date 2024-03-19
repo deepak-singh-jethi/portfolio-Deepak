@@ -1,8 +1,8 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import ScrollBottomToTop from "../animation/ScrollBottomToTop";
-import sgMail from "@sendgrid/mail";
-
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+import ContactForm from "./ContactForm";
+import emailjs from "emailjs-com";
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -43,12 +43,12 @@ const ContactMe = () => {
     } else {
       setIsSubmitting(true);
       try {
-        await sgMail.send({
-          to: "your-email@example.com", // Replace with your email
-          from: formData.email,
-          subject: "New message from your website",
-          text: formData.message,
-        });
+        const response = await emailjs.sendForm(
+          "service_wcj189n",
+          "template_56pkvgg",
+          e.target,
+          "x9R2nVgy_s-lSOeIE"
+        );
         setSubmissionMessage("Your message has been successfully sent!");
         setIsSubmitting(false);
         setFormData({ name: "", email: "", message: "" });
@@ -65,75 +65,24 @@ const ContactMe = () => {
   return (
     <ScrollBottomToTop>
       <div className="container mx-auto px-4 py-8 mt-40">
-        <h1 className=" font-bold mb-8 text-center text-yellow-300 text-5xl font-mono">
+        <motion.h1
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className=" font-bold mb-8 text-center text-yellow-300 text-xl md:text-5xl font-mono">
           Hire Me
-        </h1>
+        </motion.h1>
         <div className="max-w-2xl mx-auto">
-          <form className="space-y-4" onSubmit={handleSubmit}>
-            <div>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Your Name"
-                className={`w-full mt-1 px-4 py-2 rounded-md border ${
-                  errors.name ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:border-yellow-400`}
-              />
-              {errors.name && (
-                <p className="text-red-500 text-sm mt-1">{errors.name}</p>
-              )}
-            </div>
-            <div>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Your Email"
-                className={`w-full mt-1 px-4 py-2 rounded-md border ${
-                  errors.email ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:border-yellow-400`}
-              />
-              {errors.email && (
-                <p className="text-red-500 text-sm mt-1">{errors.email}</p>
-              )}
-            </div>
-            <div>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows="4"
-                placeholder="Your Message"
-                className={`w-full mt-1 px-4 py-2 rounded-md border ${
-                  errors.message ? "border-red-500" : "border-gray-300"
-                } focus:outline-none focus:border-yellow-400`}
-              />
-              {errors.message && (
-                <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-              )}
-            </div>
-            <div>
-              <button
-                type="submit"
-                className={`w-full bg-yellow-400 text-black py-3 rounded-md ${
-                  isSubmitting
-                    ? "opacity-50 cursor-not-allowed"
-                    : "hover:bg-yellow-500"
-                } transition duration-300 ease-in-out`}
-                disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Send Message"}
-              </button>
-            </div>
-            {submissionMessage && (
-              <p className="text-green-500 text-center">{submissionMessage}</p>
-            )}
-          </form>
+          <ContactForm
+            formData={formData}
+            errors={errors}
+            isSubmitting={isSubmitting}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          />
+          {submissionMessage && (
+            <p className="text-green-500 text-center">{submissionMessage}</p>
+          )}
         </div>
       </div>
     </ScrollBottomToTop>
