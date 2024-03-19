@@ -9,7 +9,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import Social from "./components/Social/Social";
 function App() {
   return (
-    <div className="App w-[100vw] overflow-x-hidden ">
+    <div className="App">
       <Nav />
       <div className="mx-auto mt-48">
         <div id="aboutMe">
