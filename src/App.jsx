@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App w-[100vw] overflow-x-hidden ">
       <Nav />
-      <div className="mx-auto mt-40 md:mt-64">
+      <div className="mx-auto mt-48">
         <div id="aboutMe">
           <Hero />
         </div>

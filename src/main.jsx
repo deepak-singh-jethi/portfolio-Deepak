@@ -6,7 +6,7 @@ import "./bg-css.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <>
-    <div className="w-[100vw] overflow-x-hidden bg-animation">
+    <div className="bg-animation">
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>

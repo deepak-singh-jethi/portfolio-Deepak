@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { navLinks } from "../../Data/data";
 import LargeScreenNav from "./LargeScreenNav";
 import SmallScreenNav from "./SmallScreenNav";
 
