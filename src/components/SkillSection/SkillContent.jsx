@@ -14,7 +14,7 @@ const SkillContent = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
               viewport={{ once: true }}
-              className="md:mt-12 mt-8 md:w-[60%] w-[70%] relative mx-auto">
+              className="md:mt-10 mt-8 md:w-[60%] w-[70%] relative mx-auto">
               <h1 className="text-small md:text-[24px] font-bold my-2">
                 {skill.name}
               </h1>
