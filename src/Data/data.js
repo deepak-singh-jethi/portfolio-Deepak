@@ -17,7 +17,7 @@ export const aboutMeText = [
 
 export const skills = [
   {
-    name: "HTML/CSS Proficiency",
+    name: "HTML/CSS ",
     rating: 9,
     description:
       "Solid understanding of HTML5 and CSS3. Proficient in creating responsive and visually appealing web layouts.",
@@ -25,7 +25,7 @@ export const skills = [
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/html-2752158-2284975.png?f=webp&w=512",
   },
   {
-    name: "JavaScript Proficiency",
+    name: "JavaScript",
     rating: 8,
     description:
       "Strong understanding of core JavaScript concepts and modern ES6+ features. Experienced in building dynamic and interactive web applications.",
@@ -66,7 +66,7 @@ export const skills = [
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/java-2752149-2284966.png?f=webp&w=512",
   },
   {
-    name: "UI/UX Design Basics",
+    name: "CSS Framework",
     rating: 9,
     description:
       "https://cdn.iconscout.com/icon/premium/png-512-thumb/ui-ux-design-1594521-1348622.png?f=webp&w=512",
