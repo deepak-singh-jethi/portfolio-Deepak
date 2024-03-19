@@ -57,14 +57,14 @@ const Projects = () => {
                     backgroundImage: `url(${project.imageUrl})`,
                   }}></div>
 
-                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
                 <motion.div
                   initial={{ opacity: 0, y: 50, scale: [0.8, 1.2, 1] }}
                   whileInView={{ opacity: 1, y: 0, scale: 1 }}
                   transition={{ duration: 0.3, stiffness: 30 }}
                   exit={{ opacity: 0, y: 50 }}
                   className="absolute inset-0 flex justify-center items-center text-white">
-                  <h2 className="text-2xl md:text-4xl font-bold text-center">
+                  <h2 className="text-3xl md:text-4xl font-bold text-center">
                     {project.name}
                   </h2>
                 </motion.div>

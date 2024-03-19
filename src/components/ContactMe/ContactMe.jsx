@@ -64,7 +64,7 @@ const ContactMe = () => {
 
   return (
     <ScrollBottomToTop>
-      <div className="container mx-auto px-4 py-8 mt-28 md:mt-40">
+      <div className="container mx-auto px-4 py-8 mt-14 md:mt-40">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}

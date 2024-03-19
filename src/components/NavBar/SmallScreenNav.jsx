@@ -4,6 +4,10 @@ import { navLinks } from "../../Data/data";
 
 const SmallScreenNav = ({ isHidden, handleBurger }) => {
   const slideClass = isHidden ? "left-[-100%]" : "left-0 right-0";
+
+  const handleSideBar = () => {
+    handleBurger(true);
+  };
   return (
     <AnimatePresence>
       {!isHidden && (
@@ -27,7 +31,9 @@ const SmallScreenNav = ({ isHidden, handleBurger }) => {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               style={{ marginBottom: "10px" }}
               className="text-xl font-semibold pt-6">
-              <a href={href}>{title}</a>
+              <a href={href} onClick={handleSideBar}>
+                {title}
+              </a>
             </motion.p>
           ))}
         </motion.div>
