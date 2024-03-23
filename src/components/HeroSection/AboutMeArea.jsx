@@ -92,7 +92,9 @@ const AboutMeArea = () => {
               }}
               viewport={{ once: true }}
               className=" mt:8 px-5 py-3 text-xl hover:bg-yellow-500 text-slate-800 rounded-xl bg-yellow-300 hover:text-slate-700 font-medium">
-              <a href="https://deepakresume1797.tiiny.site/" target="blank">
+              <a
+                href="https://drive.google.com/file/d/1JwfovZbLS2oNWsNDnhxFAC0ID_CUpLN3/view?usp=sharing"
+                target="blank">
                 Get Resume
               </a>
             </motion.button>
