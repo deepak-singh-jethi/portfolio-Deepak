@@ -16,7 +16,7 @@ const Hero = () => {
           className="image-container mt-40 md:mt-0">
           <div className="liquid-border">
             <img
-              src="https://drive.google.com/file/d/1UMxSeBWh7H7eyVJbV1uRo2Ygyk1cmhJN/preview"
+              src="https://scontent.fdel14-1.fna.fbcdn.net/v/t1.6435-9/32332349_811317055726429_5912480176133898240_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3YE9cBs6gZkQ7kNvgHwenMy&_nc_ht=scontent.fdel14-1.fna&oh=00_AYB8em6o2_2CmSeH2sJTv-BJVoir8PeUO0AD0pUkjPOdkg&oe=669FC619"
               alt="Your Image"
               className="image"
             />
