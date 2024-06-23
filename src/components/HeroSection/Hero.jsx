@@ -16,7 +16,7 @@ const Hero = () => {
           className="image-container mt-40 md:mt-0">
           <div className="liquid-border">
             <img
-              src="https://i.ibb.co/ScjSZ34/32332349-811317055726429-5912480176133898240-n.jpg"
+              src="https://drive.google.com/file/d/1UMxSeBWh7H7eyVJbV1uRo2Ygyk1cmhJN/preview"
               alt="Your Image"
               className="image"
             />
