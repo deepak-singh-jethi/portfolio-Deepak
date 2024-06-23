@@ -77,6 +77,14 @@ export const skills = [
 
 export const projects = [
   {
+    name: "MERN Quiz Application",
+    description:
+      "I designed and developed an interactive quiz application using the MERN (MongoDB, Express.js, React, and Node.js) stack. Users can take quizzes, answer questions, and receive real-time feedback. The app features responsive design and a seamless user experience.",
+    techStack: ["React", "Node ", "Express", "Tailwind CSS","Mongoose"],
+    githubLink: "https://github.com/deepak-singh-jethi/Quiz-application-MERN-Stack",
+    imageUrl: Store,
+  },
+  {
     name: "Rosier Foods",
     description:
       "The Rosier Foods app aims to revolutionize food delivery by offering high-quality, organic products. Our focus is on raw honey, A2 Vedic ghee, and other wholesome items. Users can explore our range, place orders, and enjoy the richness of health.",
