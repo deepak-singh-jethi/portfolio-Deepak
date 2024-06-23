@@ -77,6 +77,14 @@ export const skills = [
 
 export const projects = [
   {
+    name: "Rosier Foods",
+    description:
+      "The Rosier Foods app aims to revolutionize food delivery by offering high-quality, organic products. Our focus is on raw honey, A2 Vedic ghee, and other wholesome items. Users can explore our range, place orders, and enjoy the richness of health.",
+    techStack: ["React", "Redux", "React Router", "Tailwind CSS"],
+    githubLink: "https://github.com/deepak-singh-jethi/rousier-food-app",
+    imageUrl: Store,
+  },
+  {
     name: "Dee Store",
     description:
       "Dee Store: A React-based e-commerce platform, utilizing Redux, Router, and Tailwind CSS, offering seamless online shopping. Browse diverse products, manage your cart, and experience secure checkout for a convenient shopping journey.",
